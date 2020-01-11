@@ -36,13 +36,12 @@ function TopContributors({ history, location }) {
   const [contributorsList, setContributorsList] = useState([]);
   var numeral = require("numeral");
   useEffect(() => {
-    console.log(location);
     getContributorsList(location.state.link);
   }, [location]);
 
   async function getContributorsList(link) {
     const { data } = await getRepositoryList(link);
-    console.log(data);
+
     setContributorsList(data);
   }
 

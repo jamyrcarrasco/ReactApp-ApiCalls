@@ -17,6 +17,7 @@ import Typography from "@material-ui/core/Typography";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import Icon from "@material-ui/core/Icon";
+import Swal from "sweetalert2";
 
 // ---------HTTP IMPORTS------------
 import { getRepositoriesByName } from "../Http/httpGet";
@@ -48,11 +49,20 @@ function RepositoryList({ history, location }) {
 
   async function searchRepository(value) {
     setIsloading(true);
-    console.log(value);
+
     const { data } = await getRepositoriesByName(value.inputValue);
-    console.log(data);
-    setRepositoryList(data.items);
-    setIsloading(false);
+    if (data.items.length === 0) {
+      Swal.fire({
+        type: "info",
+        title: "Información",
+        text: "No se han encontrado repositorios con los datos suministrados."
+      });
+      setIsloading(false);
+      setRepositoryList([]);
+    } else {
+      setRepositoryList(data.items);
+      setIsloading(false);
+    }
   }
 
   return (
@@ -133,7 +143,6 @@ function RepositoryList({ history, location }) {
                     size="small"
                     color="primary"
                     onClick={() =>
-                      //   console.log(data.contributors_url)
                       history.push({
                         pathname: "/top-contributors",
                         state: { link: data.contributors_url }
