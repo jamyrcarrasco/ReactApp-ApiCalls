@@ -10,9 +10,9 @@ To install yarn follow the official documentation at https://yarnpkg.com/en/docs
 ### Run the project
 
 Once yarn is installed:
-*1-Open the project using the Code editor of your preference.
-*2- Run ```yarn``` in your console. This allows the app to download some dependencies to be able to run.
-*3-Run ```yarn start``` to run the app
+* 1-Open the project using the Code editor of your preference.
+* 2- Run ```yarn``` in your console. This allows the app to download some dependencies to be able to run.
+* 3-Run ```yarn start``` to run the app.
 
 
 
