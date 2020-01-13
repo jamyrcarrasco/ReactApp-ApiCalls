@@ -1,4 +1,4 @@
-## React App
+# React App
 
 
 This quick start guide will teach you how to get up and running with the ReactApp-ApiCalls. In order for you to run this reactjs app, please follow the guidelines so you can run it successfully.
@@ -15,7 +15,7 @@ Once yarn is installed:
 * 3-Run ```yarn start``` to run the app.
 
 
-
+### Additional
 This projects includes de following Libraries:
 
 * [SweetAlert2](https://sweetalert2.github.io/)
