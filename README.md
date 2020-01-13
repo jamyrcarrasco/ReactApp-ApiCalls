@@ -3,11 +3,15 @@
 
 This quick start guide will teach you how to get up and running with the ReactApp-ApiCalls. In order for you to run this reactjs app, please follow the guidelines so you can run it successfully.
 
-### Install Yarn
+* ### Install NodeJs
+
+To install NodeJs follow the official documentation at https://nodejs.org/es/
+
+* ### Install Yarn
 
 To install yarn follow the official documentation at https://yarnpkg.com/en/docs/install#windows-stable
 
-### Run the project
+* ### Run the project
 
 Once yarn is installed:
 * 1-Open the project using the Code editor of your preference.
