@@ -1,12 +1,7 @@
 
-<p align="center">
-  <img width="250" src="https://avatars0.githubusercontent.com/u/44930156?s=200&v=4" alt="nadle logo">
-</p>
-
-
 # Supporting Nadle API
 
-This quick start guide will teach you how to get up and running with the naddle API. This projects includes de following modules:
+This quick start guide will teach you how to get up and running with the ReactApp-ApiCalls. This projects includes de following modules:
 
 * [NodeJS](https://nodejs.org/en/) with [Express](https://expressjs.com/)
 * [Docker](https://www.docker.com/) files required for virtualizing the necessary dependencies
