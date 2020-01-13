@@ -16,7 +16,7 @@ Once yarn is installed:
 
 
 ### Additional
-This projects includes de following Libraries:
+This project includes de following dependencies:
 
 * [SweetAlert2](https://sweetalert2.github.io/)
 * [React Router](https://www.npmjs.com/package/react-router-dom)
